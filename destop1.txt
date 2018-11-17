@@ -1,0 +1,17 @@
+create table temp_makersT
+(
+empid number(2) primary key,
+username varchar(20),
+password varchar(20),
+type varchar(1)
+
+
+);
+select *from temp_makersT;
+select  count(*) from temp_makersT where username='jagadesh' and password='ranganat' and type='m';  
+
+
+select count(*) from temp_makersT where username ='"+ username + "' and password ='"+ password + "';
+
+
+select count(*) from temp_makersT where username ='jagadesh' and password ='ranganat';
